@@ -20,11 +20,11 @@
       <param name="depth/use_mode_HH" value="true"/>
       <rosparam file="$(arg stereo_params_camchain)"/>
 
-       <remap from="raw/stereo/image" to="/$(arg mav_name)/stereo_camera/image_raw"/>
-<!--       <remap from="raw/first/image" to="/$(arg mav_name)/left_camera/image_raw"/> -->
-<!--       <remap from="raw/second/image" to="/$(arg mav_name)/right_camera/image_raw"/> -->
-<!--       <remap from="raw/first/camera_info" to="/$(arg mav_name)/left_camera/camera_info"/> -->
-<!--       <remap from="raw/second/camera_info" to="/$(arg mav_name)/right_camera/camera_info"/> -->
+<!--        <remap from="raw/stereo/image" to="/$(arg mav_name)/stereo_camera/image_raw"/> -->
+      <remap from="raw/first/image" to="/$(arg mav_name)/left_camera/image_raw"/>
+      <remap from="raw/second/image" to="/$(arg mav_name)/right_camera/image_raw"/>
+      <remap from="raw/first/camera_info" to="/$(arg mav_name)/left_camera/camera_info"/>
+      <remap from="raw/second/camera_info" to="/$(arg mav_name)/right_camera/camera_info"/>
     </node>
 </group>
 

@@ -17,7 +17,7 @@ namespace image_undistort
         return queue_size;
     }
 
-/*StereoUndistort::StereoUndistort(const ros::NodeHandle& nh,
+StereoUndistort::StereoUndistort(const ros::NodeHandle& nh,
                                  const ros::NodeHandle& nh_private)
     : nh_(nh),
       nh_private_(nh_private),
@@ -150,9 +150,9 @@ namespace image_undistort
     camera_sync_ptr_->registerCallback(
         boost::bind(&StereoUndistort::camerasCallback, this, _1, _2, _3, _4));
   }
-}*/
+}
 
-    StereoUndistort::StereoUndistort(const ros::NodeHandle &nh,
+/*    StereoUndistort::StereoUndistort(const ros::NodeHandle &nh,
                                      const ros::NodeHandle &nh_private)
             : nh_(nh),
               nh_private_(nh_private),
@@ -277,7 +277,7 @@ namespace image_undistort
             stereo_image_sub_.registerCallback(
                     &StereoUndistort::stereoImageCallback, this);
         }
-    }
+    }*/
 
     void StereoUndistort::updateUndistorter(const CameraSide &side)
     {
