@@ -2,7 +2,8 @@
 
 <arg name="mav_name" default="stereo_camera_node" />
 <arg name="namespace" default="$(arg mav_name)" />
-<arg name="process_every_nth_frame" default="10" />
+<arg name="process_every_nth_frame" default="5" />
+<arg name="queue_size" default="2" />
 <arg name="stereo_params_camchain" default="$(find image_undistort)/calibration/stero0406_2023-04-06-21-03-08-camchain.yaml"/>
 
 <group ns="$(arg namespace)">
